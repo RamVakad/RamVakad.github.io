@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/style.css" media="screen">
+		<title> Ram Vakada </title>
+		<script type="text/javascript" src="./lib/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript">
+			function SpoilUnspoil(id) {
+				var toToggle = $( "#"+id );
+				toToggle.toggle(500);
+			}
+		 </script>
+
+		<!-- Add fancyBox main JS and CSS files -->
+		<script type="text/javascript" src="./source/jquery.fancybox.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="./source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				/*
+				 *  Simple image gallery. Uses default settings
+				 */
+				$('.fancybox').fancybox();
+			});
+		</script>
+		<style type="text/css">
+			.fancybox-custom .fancybox-skin {
+				box-shadow: 0 0 50px #222;
+			}
+		</style>
+		</head>
+	<body>
+		<div class="main">
+			<h1> PORTFOLIO </h1>
+			<p>Please note that this is a selected list and I have done alot more than this.</p>
+
+			<a href = "#" id = "w1" class="spoiler" onclick="SpoilUnspoil ('1')">EVORP</a>
+			<div id = "1" style="display:none;">
+				<p>
+					EVORP is a roleplaying gamemode for the game "garry's mod"
+					<br /> <br /> The server attracted almost 500 players a day and the community reached 25000+ active members.<br />
+				</p>
+				<a class="fancybox" href="images/evorp3.png" data-fancybox-group="gallery" title=""><img src="images/evorp3.png" alt="" /></a>
+				<a class="fancybox" href="images/evorp2.png" data-fancybox-group="gallery" title=""><img src="images/evorp2.png" alt="" /></a>
+				<a class="fancybox" href="images/evorp1.png" data-fancybox-group="gallery" title=""><img src="images/evorp1.png" alt="" /></a>
+				<br>
+				<a class="fancybox" href="images/evorp4.png" data-fancybox-group="gallery" title=""><img src="images/evorp4.png" alt="" /></a>
+				<br>
+				<iframe width="560" height="315" src="//www.youtube.com/embed/gDZ3m19He28?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<!--
+			<a href = "#" id = "w2" class="spoiler" onclick="SpoilUnspoil ('2')">SQL Join Generator</a>
+			<div id = "2" style="display:none;">
+				<p>This is a small C# app that can generate SQL Join queries.</p>
+				<a class="fancybox" href="images/sqlgen.png" data-fancybox-group="gallery" title=""><img src="images/sqlgen.png" alt="" /></a>
+			</div>
+		-->
+			<a href = "#" id = "w3" class="spoiler" onclick="SpoilUnspoil ('3')">AsgardDEV</a>
+			<div id = "3" style="display:none;">
+				<p>AsgardDEV was designed from scratch to emulate a MapleStory server (v110.2) in C#.<br /><br /> It involved packing sniffing, analyzing & decoding, understanding the structure and programming the server response based on the data.<br /><br />
+				It used the following library: <a href="https://code.google.com/p/maplelib/">MapleLib</a>
+				<br>GitHub: <a href = "https://github.com/RamVakad/AsgardDEV">AsgardDEV</a>
+				</p>
+				<a class="fancybox" href="images/asgardms1.png" data-fancybox-group="gallery" title=""><img src="images/asgardms1.png" alt="" /></a>
+				<a class="fancybox" href="images/asgardms2.jpg" data-fancybox-group="gallery" title=""><img src="images/asgardms2.jpg" alt="" /></a>
+			</div>
+
+
+			<!--
+			<a href = "#" id = "w5" class="spoiler" onclick="SpoilUnspoil ('5')">EMS v78 Pin Cracker :: 2012</a>
+			<div id = "5" style="display:none;">
+				<p>I first made this to retreive my forgotten PIN for my online gaming account which Nexon refused to reset, then I made it modular so others can use it by inputting their credentials. It was NEVER released. <br /><br /> It combines a C++ App that changes a few bytes of memory so that the pin can be typed and an AutoIT Script that automates the login process and detects when a pin works by checking pixel colour. <br /><br />The C++ & AutoIT scripts were packed with a C# App that gave the user a GUI to input parameters and start the process.</p>
+				<a class="fancybox" href="images/pcrack1.png" data-fancybox-group="gallery" title=""><img src="images/pcrack1.png" alt="" /></a>
+				<a class="fancybox" href="images/pcrack2.png" data-fancybox-group="gallery" title=""><img src="images/pcrack2.png" alt="" /></a>
+			</div>
+			-->
+						<a href = "#" id = "w4" class="spoiler" onclick="SpoilUnspoil ('4')">Chat Server & Client</a>
+			<div id = "4" style="display:none;">
+				<p>This is a instant messaging application made entirely in Java. It uses the POJ Sockets and client server communication takes place in plain unencrypted strings.<br /><br /> Each string starts with a command such as #pm, #whisper, #disconnect, #alert, #connected, etc that controls client & server behaviour.
+				<br />
+				<br>GitHub: <a href = "https://github.com/RamVakad/JAVAMessaging">JAVAMessaging</a>
+				</p><br />
+				<a class="fancybox" href="images/cs1.png" data-fancybox-group="gallery" title=""><img src="images/cs1.png" alt="" /></a>
+				<a class="fancybox" href="images/cs2.png" data-fancybox-group="gallery" title=""><img src="images/cs2.png" alt="" /></a>
+				<a class="fancybox" href="images/cs3.png" data-fancybox-group="gallery" title=""><img src="images/cs3.png" alt="" /></a>
+				<a class="fancybox" href="images/cs4.png" data-fancybox-group="gallery" title=""><img src="images/cs4.png" alt="" /></a>
+			</div>
+
+			<a href = "#" id = "w6" class="spoiler" onclick="SpoilUnspoil ('6')">SharpStory </a>
+			<div id = "6" style="display:none;">
+				<p>SharpStory was a v83 MapleStory server emulator that was programmed in Java, used MySQL as a database and PHP as it's online management system.
+					<br />
+					<br>GitHub: <a href = "https://github.com/RamVakad/SharpStory">SharpStory</a>
+					<br>Based on <a href = "http://trac.assembla.com/MoopleDEV/wiki">MoopleDEV</a> (Rev. 116)</p>
+					<br />
+				<a class="fancybox" href="images/sstory1.png" data-fancybox-group="gallery" title=""><img src="images/sstory1.png" alt="" /></a>
+				<a class="fancybox" href="images/sstory2.png" data-fancybox-group="gallery" title=""><img src="images/sstory2.png" alt="" /></a>
+				<a class="fancybox" href="images/sstory3.png" data-fancybox-group="gallery" title=""><img src="images/sstory3.png" alt="" /></a>
+			</div>
+
+			<br>
+			<div class="menu">
+				<a href="index.html" class="button"> Home </a>
+				<a href="portfolio.html" class="button"> Portfolio </a>
+				<a href="HTTP://GITHUB.COM/RAMVAKAD" class="button"> GitHub </a>
+			</div>
+			<p> &copy; 2011 Ram Vakada </p>
+		</div>
+	</body>
+</html>
